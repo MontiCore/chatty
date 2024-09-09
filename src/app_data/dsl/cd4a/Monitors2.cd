@@ -1,0 +1,24 @@
+classdiagram CD4A {
+  public abstract class TransmitInterface{
+    List<String> specifications;
+    public String testMethode();
+    private void addedMethode();
+  }
+  class SmallMonitor{
+    String height;
+    String width1;
+  }
+  class LargeMonitor {
+    int height = 2;
+    char test;
+    List<String> specifications;
+    String width;
+
+  }
+  private class HDMI extends TransmitInterface;
+  class DVI extends TransmitInterface;
+  class BigMonitor extends TransmitInterface;
+  association [*] HDMI (has) -> (test) SmallMonitor [1];
+  association [1..*] HDMI -> (test) BigMonitor;
+  public composition SmallMonitor (test) -- (has) DVI [*];
+}

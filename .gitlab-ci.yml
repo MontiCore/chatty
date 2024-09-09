@@ -1,0 +1,13 @@
+stages:
+  - docker
+
+buildDocker:
+  stage: docker
+  tags:
+    - docker
+  script:
+    - docker login -u $DOCKER_DEPLOY_TOKEN_USER -p $DOCKER_DEPLOY_TOKEN_PW $CI_REGISTRY
+    # use "latest" as cache
+    - docker pull $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest || true
+    - docker build --cache-from $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest -t $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest .
+    - docker push $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest

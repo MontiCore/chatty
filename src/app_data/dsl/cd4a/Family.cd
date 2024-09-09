@@ -1,0 +1,22 @@
+classdiagram CD4A {
+
+  class Person {
+    public String fullName;
+    int age;
+  }
+
+  association [1] Person (marriedTo) <-> (marriedTo) Person [1];
+
+  association [1] Person (owner) -> (owns) Car [*];
+
+  abstract class Car {
+    Color color;
+  }
+
+  class BMW extends Car;
+
+  enum Color {
+    BLUE, RED, WHITE, BLACK;
+  }
+
+}

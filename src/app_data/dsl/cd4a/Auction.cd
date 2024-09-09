@@ -1,0 +1,20 @@
+classdiagram CD4A {
+
+    abstract class Auction {
+      public long auctionIdent;
+      protected java.lang.String title;
+      public int getNumberOfBids();
+      public boolean bid(Person p, java.util.Date t);
+    }
+
+    class Person {
+      String name;
+      -> Message [*];
+    }
+
+
+  public class Message;
+
+  association [*] Auction (auctions) <-> (bidder) Person [*];
+  association Auction -> Message [*];
+}

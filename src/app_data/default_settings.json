@@ -1,0 +1,15 @@
+{"model":  "gpt-4o-mini",
+  "temp":  0.7,
+  "limit_tokens":  false,
+  "tokens": 250,
+  "stream":  true,
+  "num_docs":  5,
+  "rerank": false,
+  "num_rerank": 50,
+  "min_similarity": 0.6,
+  "min_rating": 5,
+  "rag": "auto",
+  "post_process": true,
+  "collections":  ["Documents", "Books"],
+  "theme_dark": false
+}

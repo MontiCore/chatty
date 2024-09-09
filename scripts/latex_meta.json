@@ -1,0 +1,18 @@
+[
+  {
+    "title": "MontiCore Language Workbench and Library Handbook",
+    "type": "book",
+    "source": "MCHandbuch",
+    "authors": ["Bernhard Rumpe", "Katrin Hölldobler", "Oliver Kautz"],
+    "date": "2021",
+    "excluded": ["80.todos", "81.dokuerklaerung", "82.infos", "refman-mc4"]
+  },
+  {
+    "title": "Combining Retrieval-Augmented Generation and Few-Shot Learning for Model Synthesis of Uncommon DSLs",
+    "type": "paper",
+    "source": "Modellierung WS 24 Combining FSL and RAG/tex",
+    "authors": ["Nils Baumann", "Juan Sebastian Diaz", "Judith Michael", "Lukas Netz", "Haron Nqiri", "Jan Reimer", "Bernhard Rumpe"],
+    "date": "2024",
+    "excluded": ["llms"]
+  }
+]

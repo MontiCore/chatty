@@ -1,0 +1,17 @@
+[browser]
+gatherUsageStats = false
+#[theme]
+#base = "dark"
+#primaryColor="#407fb7"
+[logger]
+level = "warning"
+[client]
+showErrorDetails = true
+showSidebarNavigation = false
+toolbarMode = "minimal"
+[runner]
+magicEnabled = false
+fastReruns = false
+[theme]
+base="light"
+primaryColor="#00529F"
